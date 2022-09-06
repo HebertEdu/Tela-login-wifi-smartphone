@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(228, 228, 228);
+
+  /* para Descktop */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  margin: 0;
+}
+
+.wrapper{
+
+}
+
+h1 {
+  color: #696969;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0 0 0 2em;
+}
+
+.fundoBranco {
+  background-color: #fff;
+  margin: 10px;
+  padding: 20px 10px 10px 10px;
+  border-radius: 20px;
+}
+
+.titulo_senha {
+  color: #03779e;
+  font-weight: 600;
+}
+
+.password {
+  padding: 10px;
+  margin: 10px 0 30px 0;
+  border: none;
+  border-bottom: 3px solid #bebebe;
+  /* Remover borda dos inputs quando clicado */
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  width: 87%;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/*-------- checkbox ---------*/
+.container_checkbox_reconexao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #6b6a6a;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Estilizando o elemento para obter a aparência inativa */
+.checkbox {
+  appearance: none;
+  outline: none;
+  width: 40px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #bebebe;
+  border-radius: 50px;
+  box-shadow: inset -20px 0 0 0 #bebebe;
+  transition-duration: 200ms;
+}
+/* O círculo do interruptor originalmente tem uma sombra pequena e suave, 
+que estilizei com um pseudo-elemento */
+.checkbox:after {
+  content: "";
+  top: 1px;
+  left: 1px;
+  width: 26px;
+  height: 26px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+/* Agora, o estilo do elemento verificado */
+.checkbox:checked {
+  border-color: #008cba;
+  box-shadow: inset 20px 0 0 0 #008cba;
+}
+/* E finalmente a sombra do círculo que muda de direção também */
+.checkbox:checked:after {
+  left: 20px;
+  box-shadow: -2px 4px 3px rgba(0, 0, 0, 0.05);
+}
+/*-------- checkbox-FIM ---------*/
+
+
+.conectar_Container {
+  display: inline-block;
+  margin: 50%%;
+
+  position: absolute;
+  top: 18em;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /*border: 1px solid gray;*/
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  
+}
+
+.ver_mais {
+  margin-bottom: 1em;
+  color: gray;
+}
+
+.conectar {
+  background-color: #008cba;
+  font-size: 24px;
+  color: #bebebe;
+  border: none;
+  border-radius: 15px;
+  width: 30vh;
+  height: 2em;
+  text-align: center;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  cursor: pointer;
+}
